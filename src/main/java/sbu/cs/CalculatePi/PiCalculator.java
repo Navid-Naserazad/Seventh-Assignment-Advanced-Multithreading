@@ -54,7 +54,7 @@ public class PiCalculator {
     public String calculate(int floatingPoint) {
         ExecutorService executorService = Executors.newFixedThreadPool(6);;
 
-        for(int i = 1; i <= 1000000; i++){
+        for(int i = 1; i <= 10000000; i++){
             MyClass myClass = new MyClass(i);
             executorService.execute(myClass);
         }
